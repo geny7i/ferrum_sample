@@ -1,0 +1,12 @@
+version: '3'
+services:
+  rails:
+    build:
+      context: .
+      args:
+        RUBY_VERSION: '3.3.1'
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - .:/rails
+    ports:
+      - "3000:3000"
