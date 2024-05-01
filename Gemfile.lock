@@ -198,6 +198,9 @@ GEM
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    wicked_pdf (2.8.0)
+      activesupport
+    wkhtmltopdf-binary-ng (0.12.6.6)
     zeitwerk (2.6.13)
 
 PLATFORMS
@@ -215,6 +218,8 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   tzinfo-data
+  wicked_pdf
+  wkhtmltopdf-binary-ng
 
 RUBY VERSION
    ruby 3.3.1p55
