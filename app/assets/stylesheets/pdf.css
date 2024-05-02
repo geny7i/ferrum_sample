@@ -1,0 +1,23 @@
+/*
+*= require destyle.css
+*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+@media screen {
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+}
+
