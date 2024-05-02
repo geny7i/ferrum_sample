@@ -17,7 +17,7 @@ ENV RAILS_ENV="development" \
 
 # Install packages needed to build gems
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential git pkg-config fonts-ipafont
+    apt-get install --no-install-recommends -y build-essential git pkg-config fonts-ipafont chromium
 
 # Install application gems
 COPY Gemfile Gemfile.lock ./

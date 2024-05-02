@@ -17,8 +17,10 @@ gem 'puma', '>= 5.0'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[windows jruby]
 
-gem 'wicked_pdf'
+# fix: OpenStruct causes NameError in Rake13.2.0 を取り込みたいので26bc414を取得
+gem 'wicked_pdf', git: 'https://github.com/mileszs/wicked_pdf.git', ref: '26bc414'
 gem 'wkhtmltopdf-binary-ng'
+gem 'ferrum'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

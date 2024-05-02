@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/mileszs/wicked_pdf.git
+  revision: 26bc41431140512b6cb1b86c377147b69b8f39d7
+  ref: 26bc414
+  specs:
+    wicked_pdf (2.8.0)
+      activesupport
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -75,6 +83,8 @@ GEM
       minitest (>= 5.1)
       mutex_m
       tzinfo (~> 2.0)
+    addressable (2.8.6)
+      public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     base64 (0.2.0)
     bigdecimal (3.1.7)
@@ -88,6 +98,11 @@ GEM
       reline (>= 0.3.8)
     drb (2.2.1)
     erubi (1.12.0)
+    ferrum (0.15)
+      addressable (~> 2.5)
+      concurrent-ruby (~> 1.1)
+      webrick (~> 1.7)
+      websocket-driver (~> 0.7)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.4)
@@ -138,6 +153,7 @@ GEM
       racc
     psych (5.1.2)
       stringio
+    public_suffix (5.0.5)
     puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.7.3)
@@ -242,8 +258,6 @@ GEM
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    wicked_pdf (2.8.0)
-      activesupport
     wkhtmltopdf-binary-ng (0.12.6.6)
     zeitwerk (2.6.13)
 
@@ -257,6 +271,7 @@ PLATFORMS
 
 DEPENDENCIES
   debug
+  ferrum
   puma (>= 5.0)
   rails (~> 7.1.3, >= 7.1.3.2)
   rubocop
@@ -266,7 +281,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   tzinfo-data
-  wicked_pdf
+  wicked_pdf!
   wkhtmltopdf-binary-ng
 
 RUBY VERSION
