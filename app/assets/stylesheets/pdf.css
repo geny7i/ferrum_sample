@@ -21,3 +21,17 @@ th, td {
   }
 }
 
+/* 追加 */
+/* ref. https://github.com/chromium/chromium/blob/326c700331fce74d87ebb1091ecd0f1ae7eea5d4/third_party/blink/renderer/core/html/resources/html.css#L1517 */
+@page {
+  /* FIXME: Define the right default values for page properties. */
+  size: auto;
+
+  padding: 0px;
+  border-width: 0px;
+}
+
+/* Allows table headers and footers to print at the top / bottom of each
+    page. */
+thead { break-inside: avoid; }
+tfoot { break-inside: avoid; }
